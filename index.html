@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YuJin_korean_cosmetics</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,43 +32,55 @@
     </header>
 
     <section>
-        <h2>Our Best products</h2>
-        <div class="product-container">
+        <h2>Our Best Products</h2>
+        <div class="product-container d-flex flex-wrap justify-content-center gap-3">
             <!-- Product 1 -->
-            <div class="product">
-                <img src="src/trial kit.jpg" alt="Perfume 1">
-                <h3>Skin Care Trial Kit</h3>
-                <p class="price">150 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/trial kit.jpg" class="card-img-top" alt="Skin Care Trial Kit">
+                <div class="card-body">
+                    <h5 class="card-title">Skin Care Trial Kit</h5>
+                    <p class="card-text price">150 000 so'm</p>
+                </div>
             </div>
             <!-- Product 2 -->
-            <div class="product">
-                <img src="src/glow serum.jpg" alt="Perfume 2">
-                <h3>Dark Spot Correcting Glow Serum</h3>
-                <p class="price">140 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/glow serum.jpg" class="card-img-top" alt="Dark Spot Correcting Glow Serum">
+                <div class="card-body">
+                    <h5 class="card-title">Dark Spot Correcting Glow Serum</h5>
+                    <p class="card-text price">140 000 so'm</p>
+                </div>
             </div>
             <!-- Product 3 -->
-            <div class="product">
-                <img src="src/centella.jpg" alt="Perfume 3">
-                <h3>Centella</h3>
-                <p class="price">250 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/centella.jpg" class="card-img-top" alt="Centella">
+                <div class="card-body">
+                    <h5 class="card-title">Centella</h5>
+                    <p class="card-text price">250 000 so'm</p>
+                </div>
             </div>
             <!-- Product 4 -->
-            <div class="product">
-                <img src="src/img.png" alt="Perfume 4">
-                <h3>Birch Juice Line</h3>
-                <p class="price">150 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/image.png" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">The first Geniture</h5>
+                    <p class="card-text price">200 000 so'm</p>
+                </div>
             </div>
             <!-- Product 5 -->
-            <div class="product">
-                <img src="src/bg.png" alt="Perfume 5">
-                <h3>1025 Dokdo Line</h3>
-                <p class="price">150 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/img.png" class="card-img-top" alt="SPF 50 Sunscreen">
+                <div class="card-body">
+                    <h5 class="card-title">Birch Juice Line</h5>
+                    <p class="card-text price">150 000 so'm</p>
+                </div>
             </div>
             <!-- Product 6 -->
-            <div class="product">
-                <img src="src/image.png" alt="Perfume 6">
-                <h3>The First Geniture</h3>
-                <p class="price">200 000 so'm</p>
+            <div class="card" style="width: 18rem;">
+                <img src="src/bg.png" class="card-img-top" alt="Refreshing Toner">
+                <div class="card-body">
+                    <h5 class="card-title">1025 Dokdo Line</h5>
+                    <p class="card-text price">150 000 so'm</p>
+                </div>
             </div>
         </div>
     </section>
@@ -65,7 +89,7 @@
         <div class="footer-content">
             <div class="footer-section about">
                 <h4>About Us</h4>
-                <p>YuJin_korean_cosmetics offers a collection of luxurious fragrances for every occasion. From fresh floral scents to rich, woody perfumes, we have something for everyone. Discover your signature scent today!</p>
+                <p>YuJin_korean_cosmetics offers luxurious skincare products for every need. Discover the best today!</p>
             </div>
             <div class="footer-section links">
                 <h4>Quick Links</h4>
@@ -79,15 +103,16 @@
             <div class="footer-section social">
                 <h4>Follow Us</h4>
                 <ul>
-                    <li><a href="https://t.me/YuJinkoreya_kosmetikasi_orginal" target="_blank">Telegram channel here</a></li>
-                    
+                    <li><a href="https://t.me/YuJinkoreya_kosmetikasi_orginal" target="_blank">Telegram</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 YuJin_korean_cosmetics. All Rights Reserved.</p>
-            <p>Designed with love to make your fragrance experience unforgettable.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
