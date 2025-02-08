@@ -21,14 +21,39 @@
 <body>
     <header>
         <h1>Best skincare products</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Otzivlar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contact Links
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" target="_blank" href="https://t.me/YuJinkoreya_kosmetikasi_orginal">Telgram kanal shu yerda</a></li>
+                      <li><a class="dropdown-item" target="_blank" href="t.me/YuJin_koreyakosmetikasi">Telegram gruppa shu yerda</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" target="_blank" href="@Nazokat_T">Telegram lichka shu yerda</a></li>
+                    </ul>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <section>
@@ -39,7 +64,16 @@
                 <img src="src/trial kit.jpg" class="card-img-top" alt="Skin Care Trial Kit">
                 <div class="card-body">
                     <h5 class="card-title">Skin Care Trial Kit</h5>
-                    <p class="card-text price">150 000 so'm</p>
+                    <p class="card-text price"><strong>150 000 so'm</strong></p>
+<p>
+    <strong>Round Lab brandining ushbu nabori</strong> yog'li va muammoli yuzlar uchun.<br>
+    <strong>To'plam tarkibi:</strong><br>
+    - Penka: 30 ml<br>
+    - Toner: 20 ml<br>
+    - Serum: 10 ml<br>
+    - Krem: 20 ml
+</p>
+
                 </div>
             </div>
             <!-- Product 2 -->
@@ -48,6 +82,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Dark Spot Correcting Glow Serum</h5>
                     <p class="card-text price">140 000 so'm</p>
+                    <p>Bu krem yuzdagi  dog'larga qarshi ishlatiladi.</p>
                 </div>
             </div>
             <!-- Product 3 -->
@@ -56,6 +91,17 @@
                 <div class="card-body">
                     <h5 class="card-title">Centella</h5>
                     <p class="card-text price">250 000 so'm</p>
+                    <p class="card-text price"><strong>150 000 so'm</strong></p>
+<p>
+    <strong>Hamma turdagi yuzlar uchun ishlatiladi.</strong><br>
+    <strong>To'plam tarkibi:</strong><br>
+    - Gidrofil moyi: 30 ml<br>
+    - Penka: 20 ml<br>
+    - Toner: 30 ml<br>
+    - Serum: 30 ml<br>
+    - Krem: 30 ml
+</p>
+
                 </div>
             </div>
             <!-- Product 4 -->
@@ -64,6 +110,7 @@
                 <div class="card-body">
                     <h5 class="card-title">The first Geniture</h5>
                     <p class="card-text price">200 000 so'm</p>
+                    <p>Ajinlarga qarshi nabor.</p>
                 </div>
             </div>
             <!-- Product 5 -->
@@ -72,6 +119,14 @@
                 <div class="card-body">
                     <h5 class="card-title">Birch Juice Line</h5>
                     <p class="card-text price">150 000 so'm</p>
+                    <p>
+                        <strong>Round Lab brandining ushbu nabori</strong> Hamma turdagi yuzlar uchun<br>
+                        <strong>To'plam tarkibi:</strong><br>
+                        - Penka: 30 ml<br>
+                        - Toner: 20 ml<br>
+                        - Serum: 10 ml<br>
+                        - Krem: 20 ml
+                    </p>
                 </div>
             </div>
             <!-- Product 6 -->
@@ -80,6 +135,14 @@
                 <div class="card-body">
                     <h5 class="card-title">1025 Dokdo Line</h5>
                     <p class="card-text price">150 000 so'm</p>
+                    <p>
+                        <strong>Round Lab brandining ushbu nabori</strong> Quruq Yuzlar uchun<br>
+                        <strong>To'plam tarkibi:</strong><br>
+                        - Penka: 30 ml<br>
+                        - Toner: 20 ml<br>
+                        - Serum: 10 ml<br>
+                        - Krem: 20 ml
+                    </p>
                 </div>
             </div>
         </div>
@@ -114,5 +177,27 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.querySelector(".form-control");
+            const productCards = document.querySelectorAll(".card");
+    
+            searchInput.addEventListener("input", function () {
+                const searchText = searchInput.value.toLowerCase();
+    
+                productCards.forEach(card => {
+                    const title = card.querySelector(".card-title").textContent.toLowerCase();
+                    const description = card.querySelector(".card-text") ? card.querySelector(".card-text").textContent.toLowerCase() : '';
+    
+                    if (title.includes(searchText) || description.includes(searchText)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
